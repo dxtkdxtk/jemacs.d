@@ -142,9 +142,10 @@
 ;;----------------------------------------------------------------------------
 ;; Allow users to provide an optional "init-local" containing personal settings
 ;;----------------------------------------------------------------------------
+(require 'init-cpp)
 (when (file-exists-p (expand-file-name "init-local.el" user-emacs-directory))
   (error "Please move init-local.el to ~/.emacs.d/lisp"))
-(require 'init-local nil t)
+(require 'init-user nil t)
 
 
 ;;----------------------------------------------------------------------------
